@@ -20,17 +20,6 @@ def push_repos(repo_path):
     except Exception as e:
         print(f'Failed to push {repo_path}: {e}')
 
-# def main():
-    # Loop through all of the directories in REPOS_DIR
-    # for repo_name in os.listdir(REPOS_DIR):
-    #     repo_path = os.path.join(REPOS_DIR, repo_name)
-    #     # Check if its a directory and if it is a Git repo
-    #     if os.path.isdir(repo_path) and os.path.exists(os.path.join(repo_path, '.git')):
-    #         print(f'Pushing repo: {repo_name}')
-    #         push_repos(repo_path)
-    # walk through the directories and subdirectories
-
-
 def find_and_push_repos(root_dir):
     for dirpath, dirnames, filenames in os.walk(root_dir):
     # Check if the current directory is a Git repo
