@@ -34,5 +34,3 @@ def find_and_push_repos(root_dir):
 
 if __name__ == "__main__":
     find_and_push_repos(REPOS_DIR)
-
-# adding this comment to test the repo.is_dirty()
